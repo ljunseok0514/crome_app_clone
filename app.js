@@ -1,12 +1,13 @@
-const h1 = document.querySelector("div.hello:first-child h1");
+const loginInput = document.querySelector("#login-form input");
+const loginButton = document.querySelector("#login-form button ");
 
-function hadleTitleClick() {
-  const cliickedClass = "cliicked lee_font";
-  if (h1.className === cliickedClass) {
-    h1.className = "";
-  } else {
-    h1.className = cliickedClass;
-  }
+function onLoginBtnClick() {
+  const username = loginInput.value;
+  // if (username === "") {
+  //   alert("Write your name");
+  // } else if (username.length > 15) {
+  //   alert("Your name is too long.");
+  // }
+  console.log(username);
 }
-
-h1.addEventListener("click", hadleTitleClick);
+loginButton.addEventListener("click", onLoginBtnClick);
