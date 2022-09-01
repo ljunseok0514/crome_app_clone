@@ -28,3 +28,4 @@ if (savedUsername === null) {
 }
 
 test;
+test2;
